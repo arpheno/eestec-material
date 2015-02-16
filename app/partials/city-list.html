@@ -1,0 +1,12 @@
+<div ng-controller="CityListCtrl">
+    <md-grid-list md-cols-sm="2" md-cols-md="4" md-cols-lg="6" md-cols-gt-lg="8" md-gutter="4" md-row-height="1:1">
+    <md-grid-tile ng-repeat="city in cities" >
+        <img style="height:auto;width:500px;" src="{{city.thumbnail}}"/>
+        <md-grid-tile-footer>
+            <h3>{{city.name}}</h3>
+            <h4>{{city.name}}</h4>
+        </md-grid-tile-footer>
+    </md-grid-tile>
+</md-grid-list>
+    </div>
+

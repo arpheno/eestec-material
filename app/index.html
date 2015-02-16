@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <title>AngularJS Material App</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="./app.css" >
+    <style type="text/css">
+        md-toolbar{
+            font-size: 10px;
+        }
+      </style>
+  </head>
+
+<body ng-app="starterApp" layout="column" ng-controller="AppCtrl">
+<!--
+         Use `flex` [below] to have the side bar and content area
+         fill the available vertical display area
+     -->
+
+<div layout="row" flex>
+    <div layout="column" flex id="content">
+        <md-content>
+            <md-toolbar md-scroll-shrink style="min-height:40px;height:55px;" class="md-accent" layout="row" layout-align="space-between center">
+                <span>electrical engineering students' european association</span>
+                <span layout="row" layout-align="center center">
+                    <ng-md-icon icon="person"></ng-md-icon>
+                    <ng-md-icon icon="search"></ng-md-icon>
+                    <md-input-container>
+                        <label>Search</label>
+                        <input/>
+                    </md-input-container>
+                    <ng-md-icon icon="clear"></ng-md-icon>
+                </span>
+            </md-toolbar>
+            <md-toolbar md-scroll-shrink class="md-medium-tall" layout="row" layout-align="space-between center">
+                <img style="height:55px;" src="assets/img/EESTEC_logo.svg"/>
+                <span layout="row" layout-align="center center">
+                    <span hide show-gt-md>
+                        <md-button>About Us</md-button>
+                        <md-button>Activities</md-button>
+                        <md-button>For Students</md-button>
+                        <md-button>Partners</md-button>
+                        <md-button>Career</md-button>
+                    </span>
+                    <button ng-click="toggleSidenav('right')" class="menuBtn">
+                    </button>
+                </span>
+            </md-toolbar>
+        </header>
+            <div ng-view>
+            </div>
+            <footer></footer>
+
+        </md-content>
+        <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right" >
+            <md-list>
+                <md-item>
+                    <md-button>About Us</md-button>
+                    <md-list>
+                        <md-item>lol</md-item>
+                        </md-list>
+                </md-item>
+                <md-item>
+                    <md-button>Activities</md-button>
+                </md-item>
+                <md-item>
+                    <md-button>For Students</md-button>
+                </md-item>
+                <md-item>
+                    <md-button>Partners</md-button>
+                </md-item>
+                <md-item>
+                    <md-button>Career</md-button>
+                </md-item>
+            </md-list>
+      </md-sidenav>
+
+    </div>
+
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-route/angular-route.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+
+    <script src="./js/cities/controllers.js"></script>
+    <script src="./js/cities/services.js"></script>
+    <script src="./app.js"></script>
+    <script src="./src/avatars/avatarService.js"></script>
+
+  </body>
+</html>
