@@ -1,23 +1,18 @@
-# AngularJS Material-Start 
 
-This Material **start*** project is a *seed* for AngularJS Materal applications. The project contains a sample AngularJS application and is preconfigured to install the Angular framework and a bunch of development and testing tools for instant web development gratification.
+# EESTEC-MATERIAL (eestecnetv3)
 
-This sample application is skeleton for a typical [AngularJS Material](http://angularjs.org/) web app: comprised of a Side navigation area and a content area. You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
-<br/>
+This project resembles the efforts for the third version of the eestec.net platform.
+It's main goals are:
 
-![Starter app](https://cloud.githubusercontent.com/assets/1045233/5948446/a6c3594c-a6f9-11e4-9d68-4d7d9a3196a2.png)
-
-<br/>
-> The start app doesn't do much... it just demonstrates how to override a theme and how to use the side navigation component. Try shrinking the window size and watch the sideNav auto-hide. You can temporarily show the sideNav by clicking on the upper left menu button.
+* A major design overhaul
+* Switching to angular JS
 
 ## Getting Started
 
-To get you started you can simply clone the material-start repository and install the dependencies:
+To get you started you can simply fork this repository.
 
 ### Prerequisites
-
-You need git to clone the material-start repository. You can get git from
+You need git to clone the eestec-material repository. You can get git from
 [http://git-scm.com/](http://git-scm.com/).
 
 We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
@@ -28,17 +23,10 @@ its package manager (npm) installed.  You can get them from [http://nodejs.org/]
 Clone the angular-seed repository using [git][git]:
 
 ```
-git clone https://github.com/angular/material-start.git
-cd material-start
+git clone https://github.com/arpheno/eestec-material
+cd eestec-material
 ```
 
-If you just want to start a new project without the material-start commit history then you can do:
-
-```bash
-git clone --depth=1 https://github.com/angular/material-start.git <your-project-name>
-```
-
-The `depth=1` tells git to only pull down one commit worth of historical data.
 
 ### Install Dependencies
 
