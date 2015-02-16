@@ -12,11 +12,25 @@ It's main goals are:
 To get you started you can simply fork this repository.
 
 ### Prerequisites
-You need git to clone the eestec-material repository. You can get git from
+On windows you should install chocolatey by opening a administrator command prompt (cmd.exe with admin privileges) and
+copy-pasting
+
+```
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+```
+
+You need git to clone the repository to your local filesystem.
+We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
+its package manager (npm) installed.
+
+```
+choco install git nodejs
+```
+
+Alternativly you can get git from
 [http://git-scm.com/](http://git-scm.com/).
 
-We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
-its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
+and nodejs from  [http://nodejs.org/](http://nodejs.org/).
 
 ### Clone material-start
 
