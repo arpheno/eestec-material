@@ -11,8 +11,19 @@
     <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="./app.css" >
     <style type="text/css">
-        md-toolbar{
+        #topbar {
             font-size: 10px;
+        }
+        #navbar{
+            font-size: 16px;
+        }
+        #logo{
+            height:55px;
+        }
+        @media only screen and (min-width: 800px) {
+            #navbar {
+                padding: 0px 0px 0px 100px;
+            }
         }
       </style>
   </head>
@@ -26,7 +37,7 @@
 <div layout="row" flex>
     <div layout="column" flex id="content">
         <md-content>
-            <md-toolbar md-scroll-shrink style="min-height:30px;height:65px;" class="md-accent" layout="row" layout-align="space-between center">
+            <md-toolbar id="topbar" md-scroll-shrink style="min-height:30px;height:65px;" class="md-accent" layout="row" layout-align="space-between center">
                 <span>Electrical Engineering Students' European assoCiation</span>
                 <span layout="row" layout-align="center center">
                     <ng-md-icon icon="person"></ng-md-icon>
@@ -38,8 +49,8 @@
                     <ng-md-icon icon="clear"></ng-md-icon>
                 </span>
             </md-toolbar>
-            <md-toolbar md-scroll-shrink class="md-medium-tall" layout="row" layout-align="space-between center">
-                <img style="padding-left:100px; height:55px;" src="assets/img/EESTEC_logo.svg"/>
+            <md-toolbar id="navbar" md-scroll-shrink class="md-medium-tall" layout="row" layout-align="space-between center">
+                <img id="logo" src="assets/img/EESTEC_logo.svg"/>
                 <span layout="row" layout-align="center center">
                     <span hide show-gt-md>
                         <md-button>About Us</md-button>
@@ -52,7 +63,6 @@
                     </button>
                 </span>
             </md-toolbar>
-        </header>
             <div ng-view>
             </div>
             <footer>

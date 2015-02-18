@@ -6,22 +6,6 @@
   font-family: Pier;
   src: url("assets/fonts/pier.otf") format("opentype");
 }
-#toolbar{
-  height:30px;
-  min-height: 30px;
-}
-#navbar{
-  padding:0px 100px;
-}
-@media only screen and (min-width: 800px) {
-#navbar {
-    padding: 0px 100px 0px 100px;
-  }
-}
-#toolbar,#navbar{
-  font-family: Pier;
-  font-size: 23px;
-}
 md-toolbar{
   font-size:23px;
 }
