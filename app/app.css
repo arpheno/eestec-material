@@ -7,11 +7,11 @@
   src: url("assets/fonts/pier.otf") format("opentype");
 }
 #toolbar{
-  height:40px;
-  min-height: 40px;
+  height:30px;
+  min-height: 30px;
 }
 #navbar{
-  padding:0px 30px;
+  padding:0px 100px;
 }
 @media only screen and (min-width: 800px) {
 #navbar {
@@ -20,13 +20,13 @@
 }
 #toolbar,#navbar{
   font-family: Pier;
-  font-size: 12px;
+  font-size: 23px;
 }
 md-toolbar{
-  font-size:10px;
+  font-size:23px;
 }
 footer{
-  height:250px;
+  height:121px;
   background-color:#333333;
 }
 .menuBtn {
@@ -45,7 +45,7 @@ md-toolbar h1 {
 
 md-list .md-button {
   color: inherit;
-  font-weight: 500;
+  font-weight: 23px;
   text-align: left;
   width: 100%;
 }
@@ -68,7 +68,7 @@ md-list .md-button {
     #content img {
       display: block;
       height: auto;
-      max-width: 500px;
+      max-width: 984px;
     }
 
 /* Utils */
