@@ -3,7 +3,12 @@
 
   angular
       .module('starterApp', ['ngMaterial', 'avatars','ngMdIcons','ngRoute','cityControllers','cityServices'])
-      .controller('AppCtrl', ['$scope', 'avatarsService', '$mdSidenav', '$mdBottomSheet', '$log', AvatarAppController ])
+      .controller('AppCtrl', ['$scope','$location', 'avatarsService', '$mdSidenav', '$mdBottomSheet', '$log', function($scope,$location){
+          $scope.navigation=function(tab){
+              $location.url(tab);
+              console.log("WTF");
+          }
+      }])
       .config(['$routeProvider',function($routeProvider) {
           $routeProvider.
               when('/',{
@@ -17,30 +22,16 @@
           })
       }])
       .config(function($mdThemingProvider) {
-          $mdThemingProvider.definePalette('darkgrey', {
-              '50': '111111',
-              '100': '111111',
-              '200': '111111',
-              '300': '111111',
-              '400': '111111',
-              '500': '111111',
-              '600': '111111',
-              '700': '111111',
-              '800': '111111',
-              '900': '111111',
-              'A100': '111111',
-              'A200': '333333',
-              'A400': 'ff1744',
-              'A700': 'd50000',
-              'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
-              // on this palette should be dark or light
-              'contrastDarkColors': ['50', '100', //hues which contrast should be 'dark' by default
-                  '200', '300', '400', 'A100'],
-              'contrastLightColors': undefined    // could also specify this if default was 'dark'
+          var eestec = $mdThemingProvider.extendPalette('pink', {
+              '800': '333333'
           });
+          $mdThemingProvider.definePalette('eestec', eestec)
           $mdThemingProvider.theme('default')
-              .primaryColor('red')
-              .accentColor('darkgrey');
+              .primaryPalette('red')
+              .accentPalette("eestec",{
+                  'default':'A400',
+                  'hue-3':'800',
+              });
 
       });
 
