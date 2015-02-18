@@ -13,7 +13,11 @@ footer{
   height:121px;
   background-color:#333333;
 }
-.menuBtn {
+ng-md-icon{
+  fill:white;
+  margin:20px;
+}
+.menuBtn{
   background-color: transparent;
   border: none;
   height: 38px;
